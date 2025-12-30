@@ -2,6 +2,7 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libvorbis
+LOCAL_ARM_MODE := arm
 LOCAL_CFLAGS += -I$(LOCAL_PATH)/../include -ffast-math -fsigned-char
 ifeq ($(TARGET_ARCH),arm)
 	LOCAL_CFLAGS += -marm
